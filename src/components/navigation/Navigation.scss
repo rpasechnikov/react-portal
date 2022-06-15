@@ -1,28 +1,39 @@
 @import '../../styles/colours.scss';
 
 .Navigation {
-  background-color: cadetblue;
+  background-color: $color-background-1;
   color: $color-primary-light;
-
-  min-width: 250px;
 
   display: flex;
   flex-direction: column;
 
+  &.expanded {
+    min-width: 250px;
+  }
+
+  &.collapsed {
+    min-width: 70px;
+  }
+
   .title-and-icon {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: end;
 
     .nav-icon {
       &:hover {
         cursor: pointer;
         color: $color-primary-light-highlight;
       }
+
+      &.collapsed {
+        color: $color-background-2;
+      }
     }
 
     .title {
       padding-left: 20px;
+      margin: 0;
     }
   }
 }

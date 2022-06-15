@@ -1,8 +1,14 @@
+@import './../styles/variables.scss';
+
 .Dashboard {
   min-height: 100vh;
   display: flex;
   flex-direction: row;
   background-color: aliceblue;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
 }
 
 .content-footer-parent {

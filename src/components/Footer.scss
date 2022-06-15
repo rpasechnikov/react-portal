@@ -1,4 +1,6 @@
+@import '../styles/colours.scss';
+
 .Footer {
-  background-color: darken(cadetblue, 20);
-  color: whitesmoke;
+  background-color: $color-background-2;
+  color: $color-primary-light;
 }

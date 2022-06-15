@@ -13,7 +13,7 @@ function Footer() {
     <div className="Footer px-5 py-3">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 text-md-start text-center">"Portal" style demo with React</div>
+          <div className="col-md-6 text-md-start text-center">Current time</div>
           <div className="col-md-6 text-md-end text-center">{currentTimeString}</div>
         </div>
       </div>
