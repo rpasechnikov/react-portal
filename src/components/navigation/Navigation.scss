@@ -28,6 +28,11 @@
 
       &.collapsed {
         color: $color-background-2;
+
+        &:hover {
+          cursor: pointer;
+          color: $color-primary-light-highlight;
+        }
       }
     }
 
