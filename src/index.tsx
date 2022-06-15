@@ -10,6 +10,7 @@ import Map from './content-pages/Map';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.scss';
+import Detail from './content-pages/Detail';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route path="/" element={<App />}>
           <Route index element={<Overview />} />
           <Route path="map" element={<Map />} />
+          <Route path="detail" element={<Detail />} />
         </Route>
       </Routes>
     </BrowserRouter>

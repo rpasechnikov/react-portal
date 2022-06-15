@@ -12,6 +12,10 @@ const NavigationService = {
         {
           title: 'Map',
           route: '/map'
+        },
+        {
+          title: 'Detail',
+          route: '/detail'
         }
       ]
     };

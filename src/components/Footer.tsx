@@ -10,7 +10,7 @@ function Footer() {
   });
 
   return (
-    <div className="Footer px-5 py-5">
+    <div className="Footer px-5 py-3">
       <div className="container">
         <div className="row">
           <div className="col-md-6 text-md-start text-center">"Portal" style demo with React</div>

@@ -1,5 +1,5 @@
 .Dashboard {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   background-color: aliceblue;
@@ -8,10 +8,12 @@
 .content-footer-parent {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-.content {
-  min-height: 400px;
   flex-grow: 1;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    flex-grow: 1;
+  }
 }
