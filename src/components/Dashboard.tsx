@@ -1,4 +1,3 @@
-import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 import Footer from './Footer';
@@ -10,8 +9,8 @@ function Dashboard() {
   return (
     <div className="Dashboard">
       <Navigation></Navigation>
-      <div className="content-parent order-1">
-        <div className="content">
+      <div className="content-footer-parent">
+        <div className="content p-2">
           <Outlet />
         </div>
         <Footer></Footer>

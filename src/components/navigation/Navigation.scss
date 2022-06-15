@@ -1,6 +1,28 @@
+@import '../../styles/colours.scss';
+
 .Navigation {
   background-color: cadetblue;
-  color: whitesmoke;
+  color: $color-primary-light;
 
-  width: 200px;
+  min-width: 250px;
+
+  display: flex;
+  flex-direction: column;
+
+  .title-and-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    .nav-icon {
+      &:hover {
+        cursor: pointer;
+        color: $color-primary-light-highlight;
+      }
+    }
+
+    .title {
+      padding-left: 20px;
+    }
+  }
 }

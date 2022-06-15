@@ -2,6 +2,8 @@
 
 - bootstrap
 - react-router-dom
+- fontawesome
+- sass
 
 ### `npm start`
 

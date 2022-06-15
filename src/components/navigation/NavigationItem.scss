@@ -1,10 +1,14 @@
+@import '../../styles/colours.scss';
+
 .NavigationItem {
-  color: whitesmoke;
+  color: $color-primary-light;
   cursor: pointer;
 
+  text-decoration: none;
   font-weight: 400;
 
   &:hover {
+    color: $color-primary-light-highlight;
     background-color: darken($color: cadetblue, $amount: 10);
     border-right: 5px solid darken($color: cadetblue, $amount: 20);
     font-weight: 500;

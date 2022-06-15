@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import NavigationItemModel from '../../models/navigation-item.model';
 import NavigationService from '../../services/navigation.service';
@@ -13,11 +13,13 @@ function Navigation() {
 
   return (
     <div className="Navigation">
-      <h2 className="p-2">{navigation.title}</h2>
+      <div className="title-and-icon p-2">
+        <FontAwesomeIcon className="nav-icon" icon={faCoffee} size="lg" />
+        <h2 className="title">{navigation.title}</h2>
+      </div>
       {navigation.items.map((navItem: NavigationItemModel) => (
         <NavigationItem key={navItem.title} title={navItem.title} route={navItem.route}></NavigationItem>
       ))}
-      <Link to="/overview">overview</Link> | <Link to="/map">map</Link>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import NavigationModel from '../models/navigation.model';
 const NavigationService = {
   getNavigation(): NavigationModel {
     return {
-      title: 'Some Title',
+      title: 'Portal',
       items: [
         {
           title: 'Home',
