@@ -1,0 +1,12 @@
+.NavigationItem {
+  color: whitesmoke;
+  cursor: pointer;
+
+  font-weight: 400;
+
+  &:hover {
+    background-color: darken($color: cadetblue, $amount: 10);
+    border-right: 5px solid darken($color: cadetblue, $amount: 20);
+    font-weight: 500;
+  }
+}

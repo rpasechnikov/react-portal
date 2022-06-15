@@ -1,0 +1,16 @@
+.Dashboard {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+}
+
+.content-parent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content {
+  min-height: 400px;
+}
